@@ -34,6 +34,16 @@ html { scroll-behavior: smooth; }
 .leaflet-right .leaflet-control { float:right; }
 .leaflet-control-zoom a { display:block; width:30px; height:30px; line-height:30px; text-align:center; text-decoration:none; color:#173d46; background:#fff; }
 .leaflet-control-zoom a:first-child { border-radius:5px 5px 0 0; }.leaflet-control-zoom a:last-child { border-radius:0 0 5px 5px; border-top:1px solid #ddd; }
+
+/* Fotos verticales: conservar el encuadre completo y los rostros visibles. */
+html body .archive-gallery img[src*="Pablo matosca en regata"],
+html body .archive-gallery img[src*="al dia siguiente en el IATE CLUB RJ"],
+html body .campaign-gallery img[src*="Pablo matosca en regata"],
+html body .campaign-gallery img[src*="al dia siguiente en el IATE CLUB RJ"] {
+  object-fit: contain !important;
+  background: var(--paper-2);
+}
+
 .leaflet-control-zoom { box-shadow:0 1px 5px rgba(0,0,0,.4); border-radius:5px; overflow:hidden; }
 .leaflet-control-attribution { padding:0 5px; color:#333; background:rgba(255,255,255,.7); }
 .leaflet-control-attribution a { color:inherit; }
